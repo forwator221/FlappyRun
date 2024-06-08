@@ -15,6 +15,7 @@ public class TileGenerator : MonoBehaviour
 
     void Start()
     {
+        Instantiate(TilePrefabs[0], new Vector3(-10,0,0), transform.rotation);
         for (int i = 0; i < _startTiles; i++)
         {
             SpawnTile(Random.Range(0,TilePrefabs.Length));
